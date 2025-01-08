@@ -16,6 +16,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
 /*Header*/
 header {
     background-color: lightcoral;
@@ -25,7 +29,7 @@ header {
 main {
     background-color: lightblue;
     /*Make main elemenet take upany surplus space to push footer down*/
-    flex:  1 0 auto;
+    flex: 1 0 auto;
 }
 
 /*Footer*/
