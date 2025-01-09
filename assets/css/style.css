@@ -174,6 +174,50 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
+    #reasons {
+        width: 90%;
+        margin: 20px auto;
+        
+    }
+    
+    #reasons h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 280%;
+    }
+    
+    #benefits-phsyical > div {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    #benefits-mental > div {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    #benefits p {
+        padding: 0 20px;
+    }
+    hr {
+        border-top: 1px solid #3a3a3a;
+        margin: 5px 0;
+       
+    }
+    #circle-cover-bg{
+        height: 90vw;
+        width: 90vw;
+        margin-bottom: 20px;
+        background: url("../images/reasons-image.webp")no-repeat top center / cover;
+        /* Makes the square image into a circle*/
+        border-radius: 50%;
+        max-width: 300px;
+        max-height: 300px;
+        
+    }
+    #benefits-image {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     /* Main content */
     main {
@@ -187,52 +231,28 @@ main {
         right: 50px;
 
     }
+    /* Reasons section*/
+
+#benefits-physical,
+#benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+#benefits-physical > div,
+#benefits-mental >div {
+    width:75%
+}
+#benefits-mental >div
+{
+    text-align: end;
+    align-self: flex-end;
+}
 }
 
-#reasons {
-    width: 90%;
-    margin: 20px auto;
-    
-}
 
-#reasons h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 280%;
-}
 
-#benefits-phsyical > div {
-    line-height: 20px;
-    margin-bottom: 20px;
-}
-#benefits-mental > div {
-    line-height: 20px;
-    margin-bottom: 20px;
-}
-#benefits p {
-    padding: 0 20px;
-}
-hr {
-    border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
-   
-}
-#circle-cover-bg{
-    height: 90vw;
-    width: 90vw;
-    margin-bottom: 20px;
-    background: url("../images/reasons-image.webp")no-repeat top center / cover;
-    /* Makes the square image into a circle*/
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-    
-}
-#benefits-image {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* Media query :laptops and larger (992px and up)*/
 @media screen and (min-width:992px) {
@@ -241,5 +261,27 @@ hr {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
 
+    }
+}
+/* Media query :laptops and larger (1200px and up)*/
+@media screen and (min-width:1200px){
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+    #benefits > div {
+        Flex:1;
+    }
+    #benefits-image {
+        order: 0;
+    }
+    #benefits-mental {
+        order: 1;
+    }
+    #benefits-mental > div{
+        align-self: flex-start;
+    }
+    #benefits-phsyical > div{
+        align-self: flex-end;
     }
 }
