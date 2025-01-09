@@ -16,12 +16,15 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
+
 /*Header*/
 header {
     background-color: #ffffff;
@@ -91,7 +94,7 @@ nav {
 
 /*Main*/
 main {
-    
+
     /*Make main elemenet take upany surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 40px;
@@ -101,10 +104,11 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-   background: url("../images/hero-image.webp")no-repeat center center/cover;
-   position: relative;
+    background: url("../images/hero-image.webp")no-repeat center center/cover;
+    position: relative;
 }
-#cover-text{
+
+#cover-text {
     /* Final rgba value sets the opacity so it is semi-trasparent*/
 
     background-color: rgba(241, 109, 107, .7);
@@ -115,22 +119,26 @@ main {
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
-    
+
 }
-#cover-text >h2, #cover-text > h3{
+
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 
 }
+
 /*Footer*/
 
-    #social-networks {
+#social-networks {
 
-        text-align: center;
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-evenly;
-        list-style-type:none;
-    }
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
@@ -172,12 +180,42 @@ main {
         /*Push main content down to accomidate larger header*/
         margin-top: 75px;
     }
+
     /* Hero */
     #cover-text {
         width: 300px;
         right: 50px;
 
     }
+}
+
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+    
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-phsyical > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+#benefits p {
+    padding: 0 20px;
+}
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+   
 }
 
 /* Media query :laptops and larger (992px and up)*/
